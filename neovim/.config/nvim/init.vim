@@ -28,6 +28,7 @@ Plugin 'chase/vim-ansible-yaml'                " ansible
 Plugin 'lepture/vim-jinja'                     " jinja2
 Plugin 'vim-perl/vim-perl'                     " perl
 Plugin 'plasticboy/vim-markdown'               " markdown
+Plugin 'hashivim/vim-terraform'                " terraform
 call vundle#end()
 
 filetype plugin indent on
@@ -65,4 +66,9 @@ set mouse=
 
 " disable folding for vim-markdown
 let g:vim_markdown_folding_disabled = 1
+
+" vim-terraform
+let g:terraform_align=1
+" vim-commentary vs vim-terraform
+autocmd FileType terraform setlocal commentstring=#%s
 
