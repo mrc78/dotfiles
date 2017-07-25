@@ -1,11 +1,14 @@
 #
 
-.PHONY: install shell neovim tmux ssh
+.PHONY: install shell neovim tmux ssh alacritty
 
-install: shell neovim tmux ssh
+install: shell neovim tmux ssh alacritty
 
 shell: ~/antigen
 	stow shell
+
+alacritty:
+	stow alacritty
 
 ~/antigen:
 	git clone https://github.com/zsh-users/antigen.git ~/antigen
