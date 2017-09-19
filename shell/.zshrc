@@ -13,6 +13,8 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen theme gozilla
 antigen apply
 
+export ZSH_THEME_GIT_PROMPT_CLEAN=" ✔"
+export ZSH_THEME_GIT_PROMPT_DIRTY=" ✗"
 export HIST_STAMPS="yyyy-mm-dd"
 export LANG=en_US.UTF-8
 export EDITOR='nvim'
@@ -62,5 +64,8 @@ export TZ="Europe/Madrid"
 
 eval "$(direnv hook zsh)"
 
-source .localenv
+if [ -f ${HOME}/.localenv ]
+then
+    source ${HOME}/.localenv
+fi
 
