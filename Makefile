@@ -2,7 +2,7 @@
 
 .PHONY: install shell neovim tmux ssh alacritty
 
-install: shell neovim tmux ssh alacritty
+install: shell neovim tmux ssh alacritty node
 
 shell: ~/antigen
 	stow shell
@@ -22,6 +22,9 @@ neovim: ~/.config/nvim/bundle/Vundle.vim
 
 tmux: ~/.tmux/plugins/tpm
 	stow tmux
+
+node:
+	stow node
 
 ~/.tmux/plugins/tpm:
 	mkdir -p ~/.tmux/plugins
