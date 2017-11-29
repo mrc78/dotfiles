@@ -57,6 +57,8 @@ export MANPATH="${HOME}/.local/share/man:${MANPATH}"
 export INFOPATH="${HOME}/.local/share/info:${INFOPATH}"
 
 # rvm
+source "$HOME/.rvm/scripts/rvm"
+export PATH="$PATH:$HOME/.rvm/bin"
 rvm use system > /dev/null 2>&1
 
 # https://blog.packagecloud.io/eng/2017/02/21/set-environment-variable-save-thousands-of-system-calls/
