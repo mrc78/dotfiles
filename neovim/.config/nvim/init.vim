@@ -18,15 +18,8 @@ Plugin 'ConradIrwin/vim-bracketed-paste'
 Plugin 'direnv/direnv.vim'
 Plugin 'chr4/sslsecure.vim'
 Plugin 'vim-scripts/indentpython.vim'          " python
-Plugin 'kergoth/vim-bitbake'                   " bitbake
-Plugin 'fatih/vim-go.git'                      " golang
-Plugin 'rust-lang/rust.vim'                    " rust
-Plugin 'vim-ruby/vim-ruby.git'                 " ruby
 Plugin 'ekalinin/Dockerfile.vim'               " Dockerfile
 Plugin 'elzr/vim-json.git'                     " json
-Plugin 'chase/vim-ansible-yaml'                " ansible
-Plugin 'lepture/vim-jinja'                     " jinja2
-Plugin 'vim-perl/vim-perl'                     " perl
 Plugin 'plasticboy/vim-markdown'               " markdown
 Plugin 'hashivim/vim-terraform'                " terraform
 call vundle#end()
