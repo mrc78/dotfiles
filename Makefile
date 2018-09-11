@@ -31,5 +31,7 @@ node:
 	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ssh:
+	mkdir -p ~/.ssh
+	chmod 700 ~/.ssh
 	stow ssh
 
