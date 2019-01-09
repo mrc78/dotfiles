@@ -2,11 +2,11 @@ set nocompatible
 filetype off
 
 " https://github.com/gmarik/Vundle.vim
-"  mkdir -p ~/.config/nvim/bundle
-"  cd ~/.config/nvim/bundle
+"  mkdir -p ~/.config/vundle
+"  cd ~/.config/vundle
 "  git clone https://github.com/gmarik/Vundle.vim
-set rtp+=~/.config/nvim/bundle/Vundle.vim
-call vundle#begin('~/.config/nvim/bundle')
+set rtp+=~/.config/vundle/Vundle.vim
+call vundle#begin('~/.config/vundle')
 Plugin 'gmarik/Vundle.vim'
 Plugin 'bling/vim-airline'
 Plugin 'majutsushi/tagbar.git'
@@ -16,12 +16,7 @@ Plugin 'tpope/vim-endwise.git'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'ConradIrwin/vim-bracketed-paste'
 Plugin 'direnv/direnv.vim'
-Plugin 'chr4/sslsecure.vim'
-Plugin 'vim-scripts/indentpython.vim'          " python
-Plugin 'ekalinin/Dockerfile.vim'               " Dockerfile
-Plugin 'elzr/vim-json.git'                     " json
 Plugin 'plasticboy/vim-markdown'               " markdown
-Plugin 'hashivim/vim-terraform'                " terraform
 call vundle#end()
 
 filetype plugin indent on
