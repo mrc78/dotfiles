@@ -16,6 +16,9 @@ alacritty:
 neovim: ~/.config/nvim/bundle/Vundle.vim
 	stow neovim
 
+vim: ~/.config/nvim/bundle/Vundle.vim
+	stow vim
+
 ~/.config/nvim/bundle/Vundle.vim:
 	mkdir -p ~/.config/nvim/bundle
 	git clone https://github.com/gmarik/Vundle.vim ~/.config/nvim/bundle/Vundle.vim
