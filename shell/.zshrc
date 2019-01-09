@@ -22,7 +22,6 @@ export PAGER='less'
 bindkey -v
 umask 022
 unsetopt sharehistory
-test ${DISPLAY} && numlockx
 
 # nvim
 alias vi='nvim'
