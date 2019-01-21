@@ -13,15 +13,15 @@ alacritty:
 ~/antigen:
 	git clone https://github.com/zsh-users/antigen.git ~/antigen
 
-neovim: ~/.config/nvim/bundle/Vundle.vim
+neovim: ~/.config/vundle/Vundle.vim
 	stow neovim
 
-vim: ~/.config/nvim/bundle/Vundle.vim
+vim: ~/.config/vundle/Vundle.vim
 	stow vim
 
-~/.config/nvim/bundle/Vundle.vim:
-	mkdir -p ~/.config/nvim/bundle
-	git clone https://github.com/gmarik/Vundle.vim ~/.config/nvim/bundle/Vundle.vim
+~/.config/vundle/Vundle.vim:
+	mkdir -p ~/.config/vundle
+	git clone https://github.com/gmarik/Vundle.vim ~/.config/vundle/Vundle.vim
 
 tmux: ~/.tmux/plugins/tpm
 	stow tmux
