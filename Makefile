@@ -7,9 +7,6 @@ install: shell neovim tmux ssh alacritty node
 shell: ~/antigen
 	stow shell
 
-alacritty:
-	stow alacritty
-
 ~/antigen:
 	git clone https://github.com/zsh-users/antigen.git ~/antigen
 
