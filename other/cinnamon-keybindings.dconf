@@ -1,7 +1,0 @@
-[wm]
-minimize=['<Super>Down']
-push-tile-down=@as []
-maximize=@as []
-toggle-maximized=['<Super>Up']
-push-tile-up=@as []
-unmaximize=@as []
