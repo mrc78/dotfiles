@@ -2,7 +2,7 @@
 
 .PHONY: install shell neovim tmux ssh alacritty
 
-install: shell neovim tmux ssh alacritty node
+install: shell neovim vim tmux ssh node
 
 shell: ~/antigen
 	stow shell
