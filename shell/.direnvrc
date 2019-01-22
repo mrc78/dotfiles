@@ -1,5 +1,9 @@
+# vim:ft=sh
 layout_virtualenv() {
   local venv_path="$1"
   source ${venv_path}/bin/activate
 }
-
+layout_golang() {
+  export GOPATH=$(expand_path go)
+  PATH_add go/bin
+}
