@@ -8,6 +8,7 @@ filetype off
 set rtp+=~/.config/vundle/Vundle.vim
 call vundle#begin('~/.config/vundle')
 Plugin 'gmarik/Vundle.vim'
+Plugin 'jaredgorski/spacecamp'                 " spacecamp color scheme
 Plugin 'bling/vim-airline'
 Plugin 'majutsushi/tagbar.git'
 Plugin 'tpope/vim-fugitive'                    " git
@@ -17,6 +18,9 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'ConradIrwin/vim-bracketed-paste'
 Plugin 'direnv/direnv.vim'
 Plugin 'plasticboy/vim-markdown'               " markdown
+Plugin 'Shougo/deoplete.nvim'
+Plugin 'ekalinin/Dockerfile.vim'               " dockerfile
+Plugin 'psf/black'
 call vundle#end()
 
 filetype plugin indent on
@@ -30,7 +34,7 @@ set noerrorbells
 set novisualbell
 set termguicolors
 
-colorscheme industry
+colorscheme spacecamp
 set background=dark
 
 let mapleader = "\<Space>"
@@ -59,4 +63,7 @@ let g:vim_markdown_folding_disabled = 1
 let g:terraform_align=1
 " vim-commentary vs vim-terraform
 autocmd FileType terraform setlocal commentstring=#%s
-
+" 2-space yaml
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
