@@ -1,24 +1,4 @@
 set nocompatible
-filetype off
-
-" https://github.com/gmarik/Vundle.vim
-"  mkdir -p ~/.config/vundle
-"  cd ~/.config/vundle
-"  git clone https://github.com/gmarik/Vundle.vim
-set rtp+=~/.config/vundle/Vundle.vim
-call vundle#begin('~/.config/vundle')
-Plugin 'gmarik/Vundle.vim'
-Plugin 'tpope/vim-sensible'
-Plugin 'bling/vim-airline'
-Plugin 'majutsushi/tagbar.git'
-Plugin 'tpope/vim-fugitive'                    " git
-Plugin 'tpope/vim-commentary.git'
-Plugin 'tpope/vim-endwise.git'
-Plugin 'vim-syntastic/syntastic'
-Plugin 'ConradIrwin/vim-bracketed-paste'
-Plugin 'direnv/direnv.vim'
-Plugin 'plasticboy/vim-markdown'               " markdown
-call vundle#end()
 
 filetype plugin indent on
 set softtabstop=4
@@ -34,7 +14,7 @@ set termguicolors
 let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
 let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
 
-colorscheme industry
+colorscheme spacecamp
 set background=dark
 
 let mapleader = "\<Space>"
@@ -63,4 +43,5 @@ let g:vim_markdown_folding_disabled = 1
 let g:terraform_align=1
 " vim-commentary vs vim-terraform
 autocmd FileType terraform setlocal commentstring=#%s
-
+" 2-space yaml
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
