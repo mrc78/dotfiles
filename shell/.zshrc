@@ -16,17 +16,12 @@ antigen apply
 export ZSH_THEME_GIT_PROMPT_CLEAN=" ✔"
 export ZSH_THEME_GIT_PROMPT_DIRTY=" ✗"
 export HIST_STAMPS="yyyy-mm-dd"
-export LANG=en_US.UTF-8
-export EDITOR='nvim'
+export LANG=es_ES.UTF-8
+export EDITOR='vim'
 export PAGER='less'
 bindkey -v
 umask 022
 unsetopt sharehistory
-
-# nvim
-alias vi='nvim'
-alias vim='nvim'
-alias view="nvim -R"
 
 # vagrant
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
@@ -45,10 +40,15 @@ export INFOPATH="${HOME}/.local/share/info:${INFOPATH}"
 # https://blog.packagecloud.io/eng/2017/02/21/set-environment-variable-save-thousands-of-system-calls/
 export TZ="Europe/Madrid"
 
-eval "$(direnv hook zsh)"
-
 if [ -f ${HOME}/.localenv ]
 then
     source ${HOME}/.localenv
 fi
 
+eval "$(direnv hook zsh)"
+
+# toolbox
+if [[ "${TOOLBOX_PATH}" ]]
+then
+    export PS1="⬢ ${PS1}"
+fi
