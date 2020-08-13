@@ -38,3 +38,7 @@ ssh:
 alacritty:
 	mkdir -p ~/.config/alacritty
 	stow alacritty
+
+sway:
+	mkdir -p ~/.config/sway
+	stow sway
