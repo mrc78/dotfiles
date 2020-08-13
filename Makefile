@@ -35,3 +35,6 @@ ssh:
 	chmod 700 ~/.ssh
 	stow ssh
 
+alacritty:
+	mkdir -p ~/.config/alacritty
+	stow alacritty
